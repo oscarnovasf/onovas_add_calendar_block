@@ -1,0 +1,35 @@
+onovas_add_calendar_block.settings:
+  type: config_object
+  label: 'Onovas Add Calendar Block settings'
+  mapping:
+    enabled_calendars:
+      type: mapping
+      label: 'Select the calendars to enable'
+      mapping:
+        google:
+          type: string
+          label: 'Google'
+        outlook:
+          type: string
+          label: 'Outlook'
+        yahoo:
+          type: string
+          label: 'Yahoo'
+        icalc:
+          type: string
+          label: 'iCalc'
+    text_for_google:
+      type: string
+      label: 'Text for Google Link'
+    text_for_outlook:
+      type: string
+      label: 'Text for Outlook Link'
+    text_for_yahoo:
+      type: string
+      label: 'Text for Yahoo Link'
+    text_for_icalc:
+      type: string
+      label: 'Text for iCalc Link'
+    show_countdown:
+      type: boolean
+      label: 'Show countdown'

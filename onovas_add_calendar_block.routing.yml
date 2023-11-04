@@ -1,0 +1,44 @@
+################################################################################
+# MENÚ GLOBAL PARA LOS MÓDULOS CUSTOM                                          #
+################################################################################
+
+# Menú de configuración para todas las herramientas.
+custom_module.global.admin:
+  path: '/admin/custom_modules'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Custom Modules'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    no_cache: 'TRUE'
+
+################################################################################
+# CONFIGURACIÓN DEL MÓDULO                                                     #
+################################################################################
+
+# Ruta para ver todas las herramientas de este módulo.
+custom_module.onovas_add_calendar_block.admin:
+  path: '/admin/custom_modules/onovas_add_calendar_block'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Add Calendar Block'
+  options:
+    _admin_route: TRUE
+  requirements:
+    _permission: 'config onovas_add_calendar_block'
+
+################################################################################
+# FORMULARIOS                                                                  #
+################################################################################
+
+# Ruta para el formulario de configuración.
+onovas_add_calendar_block.settings:
+  path: '/admin/custom_modules/onovas_add_calendar_block/settings'
+  defaults:
+    _form: '\Drupal\onovas_add_calendar_block\Form\config\SettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'config onovas_add_calendar_block'
+  options:
+    no_cache: 'TRUE'

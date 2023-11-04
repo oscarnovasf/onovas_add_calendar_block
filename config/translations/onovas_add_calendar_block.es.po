@@ -1,0 +1,175 @@
+# $Id$
+#
+# Spanish translation of Drupal (general)
+# Copyright OscarNovas.com <hola@oscarnovas.com>
+# Generated from files:
+#  onovas_add_calendar_block.module: n/a
+#  onovas_add_calendar_block.info.yml: n/a
+#  onovas_add_calendar_block.links.menu.yml: n/a
+#  onovas_add_calendar_block.routing.yml: n/a
+#  src/Plugin/Block/AddCalendarBlock.php: n/a
+#  onovas_add_calendar_block.permissions.yml: n/a
+#  config/schema/onovas_add_calendar_block.schema.yml: n/a
+#  src/Form/config/SettingsForm.php: n/a
+#  templates/onovas-add-calendar-block.html.twig: n/a
+#  templates/onovas-add-calendar-counter.html.twig: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: onovas: Add Calendar Block (1.0.0)\n"
+"POT-Creation-Date: 2023-10-30 20:18+0100\n"
+"PO-Revision-Date: 2023-10-30 20:18+0100\n"
+"Last-Translator: Óscar Novás <hola@oscarnovas.com>\n"
+"Language-Team: OscarNovas.com <hola@oscarnovas.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: onovas_add_calendar_block.module:61
+msgid "You can now <a href=\"@url_settings\">configure the onovas: Add Calendar Block module</a> for your site."
+msgstr "Puedes <a href=\"@url_settings\">configurar el módulo onovas: Add Calendar Block </a> para tu sitio."
+
+#: onovas_add_calendar_block.info.yml:0
+msgid "onovas: Add Calendar Block"
+msgstr ""
+
+#: onovas_add_calendar_block.info.yml:0
+msgid "onovas: Add Calendar Block - Functionalities"
+msgstr "onovas: Add Calendar Block - Funcionalidades"
+
+#: onovas_add_calendar_block.info.yml:0
+msgid "custom"
+msgstr ""
+
+#: onovas_add_calendar_block.links.menu.yml:0 onovas_add_calendar_block.routing.yml:0
+msgid "Custom Modules"
+msgstr ""
+
+#: onovas_add_calendar_block.links.menu.yml:0 onovas_add_calendar_block.routing.yml:0 src/Plugin/Block/AddCalendarBlock.php:18
+msgid "Add Calendar Block"
+msgstr ""
+
+#: onovas_add_calendar_block.links.menu.yml:0 onovas_add_calendar_block.routing.yml:0 src/Plugin/Block/AddCalendarBlock.php:127
+msgid "Settings"
+msgstr "Configuración"
+
+#: onovas_add_calendar_block.links.menu.yml:0
+msgid "Global settings for onovas: Add Calendar Block"
+msgstr "Configuración global para onovas: Add Calendar Block"
+
+#: onovas_add_calendar_block.permissions.yml:0
+msgid "Config onovas: Add Calendar Block"
+msgstr "Configurar onovas: Add Calendar Block"
+
+#: onovas_add_calendar_block.permissions.yml:0
+msgid "Allow users to access onovas: Add Calendar Block Config."
+msgstr ""
+"Permitir a los usuarios acceder a la configuración de onovas: Add "
+"Calendar Block."
+
+#: config/schema/onovas_add_calendar_block.schema.yml:0
+msgid "onovas: Add Calendar Block Settings"
+msgstr ""
+
+#: config/schema/onovas_add_calendar_block.schema.yml:0
+msgid "Location"
+msgstr "Ubicación"
+
+#: src/Form/config/SettingsForm.php:154
+msgid "Calendars"
+msgstr "Calendarios"
+
+#: src/Form/config/SettingsForm.php:158
+msgid "<p><h2>Calendars Settings</h2></p>"
+msgstr "<p><h2>Configuración de calendarios</h2></p>"
+
+#: src/Form/config/SettingsForm.php:163
+msgid "Show countdown"
+msgstr "Mostrar cuenta atrás"
+
+#: src/Form/config/SettingsForm.php:169
+msgid "Select the calendars to enable"
+msgstr "Seleccionar los calendarios a habilitar"
+
+#: src/Form/config/SettingsForm.php:183
+msgid "Link texts"
+msgstr "Texto para enlaces"
+
+#: src/Form/config/SettingsForm.php:189
+msgid "Text for Google Link"
+msgstr "Texto para el enlace Google"
+
+#: src/Form/config/SettingsForm.php:196
+msgid "Text for Outlook Link"
+msgstr "Texto para el enlace Outlook"
+
+#: src/Form/config/SettingsForm.php:203
+msgid "Text for Yahoo Link"
+msgstr "Texto para el enlace Yahoo"
+
+#: src/Form/config/SettingsForm.php:210
+msgid "Text for iCalc Link"
+msgstr "Texto para el enlace iCalc"
+
+#: src/Form/config/SettingsForm.php:238
+msgid "Info"
+msgstr "Información"
+
+#: src/Form/config/SettingsForm.php:276
+msgid "License"
+msgstr "Licencia"
+
+#: src/Form/config/SettingsForm.php:314
+msgid "Help"
+msgstr "Ayuda"
+
+#: src/Plugin/Block/AddCalendarBlock.php:134
+msgid "Type of node that contains the event."
+msgstr "Tipo de contenido que contiene el evento."
+
+#: src/Plugin/Block/AddCalendarBlock.php:138;169;180;191;202
+msgid "-- Select one --"
+msgstr "-- Seleccionar uno --"
+
+#: src/Plugin/Block/AddCalendarBlock.php:151
+msgid "Getting fields..."
+msgstr "Obteniendo campos..."
+
+#: src/Plugin/Block/AddCalendarBlock.php:166
+msgid "Event start date field."
+msgstr "Campo de fecha de inicio del evento."
+
+#: src/Plugin/Block/AddCalendarBlock.php:177
+msgid "Event end date field."
+msgstr "Campo de fecha de finalización del evento."
+
+#: src/Plugin/Block/AddCalendarBlock.php:188
+msgid "Event location field."
+msgstr "Campo de ubicación del evento."
+
+#: src/Plugin/Block/AddCalendarBlock.php:199
+msgid "Event description field."
+msgstr "Campo de descripción del evento."
+
+#: src/Plugin/Block/AddCalendarBlock.php:18
+msgid "onovas"
+msgstr ""
+
+#: templates/onovas-add-calendar-block.html.twig:9 templates/onovas-add-calendar-counter.html.twig:5
+msgid "Days"
+msgstr "Días"
+
+#: templates/onovas-add-calendar-block.html.twig:13 templates/onovas-add-calendar-counter.html.twig:9
+msgid "Hours"
+msgstr "Horas"
+
+#: templates/onovas-add-calendar-block.html.twig:17 templates/onovas-add-calendar-counter.html.twig:13
+msgid "Minutes"
+msgstr "Minutos"
+
+#: templates/onovas-add-calendar-block.html.twig:21 templates/onovas-add-calendar-counter.html.twig:17
+msgid "Seconds"
+msgstr "Segundos"
+

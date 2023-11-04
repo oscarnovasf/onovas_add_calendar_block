@@ -1,0 +1,40 @@
+
+{% if older == false %}
+  <div class="onovas_add_calendar_container">
+    {% if show_counter %}
+      <div class="onovas_add_calendar_container__countdown">
+        <ul>
+          <li>
+            <span class="onovas_add_calendar_container__countdown__number onovas_add_calendar_container__countdown__number_days" id="counter-days"></span>
+            <span class="onovas_add_calendar_container__countdown__label">{{ "Days" | t }}</span>
+          </li>
+          <li>
+            <span class="onovas_add_calendar_container__countdown__number onovas_add_calendar_container__countdown__number_hours" id="counter-hours"></span>
+            <span class="onovas_add_calendar_container__countdown__label">{{ "Hours" | t }}</span>
+          </li>
+          <li>
+            <span class="onovas_add_calendar_container__countdown__number onovas_add_calendar_container__countdown__number_minutes" id="counter-minutes"></span>
+            <span class="onovas_add_calendar_container__countdown__label">{{ "Minutes" | t }}</span>
+          </li>
+          <li>
+            <span class="onovas_add_calendar_container__countdown__number onovas_add_calendar_container__countdown__number_seconds" id="counter-seconds"></span>
+            <span class="onovas_add_calendar_container__countdown__label onovas_add_calendar_container__countdown__label_small">{{ "Seconds" | t }}</span>
+          </li>
+        </ul>
+      </div>
+    {% endif %}
+
+    <div class="onovas_add_calendar_container__links">
+      <ul>
+        {% for key, item in items %}
+          <li>
+            {# TODO: target y rel hacerlos configurables #}
+            <a href="{{ item.link }}" class="{{ key }}" target="_blank" rel="nofollow">
+              {{ item.text_link }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endif %}

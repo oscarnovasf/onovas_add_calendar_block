@@ -1,0 +1,46 @@
+/* *****************************************************************************
+ * CUENTA ATRÁS.
+ ******************************************************************************/
+@font-face {
+  font-family: 'LCDBOLD';
+  src: url('../assets/fonts/LCDBOLD.eot');
+  src: local('LCDBOLD'),
+       url('../assets/fonts/LCDBOLD.woff') format('woff'),
+       url('../assets/fonts/LCDBOLD.ttf') format('truetype');
+}
+
+.onovas_add_calendar_container__countdown {
+  text-align: center;
+}
+
+.onovas_add_calendar_container__countdown ul {
+  padding: 0;
+}
+
+.onovas_add_calendar_container__countdown ul li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #000;
+  margin: 5px;
+}
+
+.onovas_add_calendar_container__countdown ul li span.onovas_add_calendar_container__countdown__number {
+  display: block;
+  font-size: 3rem;
+  font-family: 'LCDBOLD' !important;
+}
+
+.onovas_add_calendar_container__countdown ul li span.onovas_add_calendar_container__countdown__label {
+  display: block;
+  font-size: 1.125rem;
+}
+
+.onovas_add_calendar_container__countdown ul li span.onovas_add_calendar_container__countdown-number_seconds {
+  font-size: 2.375rem;
+}
+
+.onovas_add_calendar_container__countdown ul li span.onovas_add_calendar_container__countdown-label.onovas_add_calendar_container__countdown-label-small {
+  font-size: .9375rem;
+}

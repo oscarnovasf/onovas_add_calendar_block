@@ -1,0 +1,42 @@
+################################################################################
+# LIBRERÍAS                                                                    #
+################################################################################
+
+# Para la visualización de Readme, License y Changelog.
+markdown:
+  version: VERSION
+  css:
+    theme:
+      css/markdown.css: {}
+
+# Cuenta atrás del evento.
+counter:
+  version: VERSION
+  js:
+    js/counter.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - onovas_add_calendar_block/counter.utils
+
+# Cuenta atrás del evento (TwigExtension).
+counter.twig:
+  version: VERSION
+  js:
+    js/counter-twig.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - onovas_add_calendar_block/counter.utils
+
+# Funciones y estilos compartidos en todos los contadores.
+counter.utils:
+  version: VERSION
+  css:
+    theme:
+      css/countdown.css: {}
+  js:
+    js/utils.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

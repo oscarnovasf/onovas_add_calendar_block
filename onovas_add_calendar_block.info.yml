@@ -1,0 +1,28 @@
+# Datos del módulo
+name: 'onovas: Add Calendar Block'
+description: 'onovas: Add Calendar Block - Functionalities'
+# project: 'onovas_add_calendar_block'
+
+# Datos de la versión
+package: custom
+type: module
+version: '1.0.0'
+
+# Tema
+base theme: false
+
+# Configuración
+configure: onovas_add_calendar_block.settings
+
+# Dependencias
+dependencies:
+  - drupal:block
+
+# Requisitos
+core_version_requirement: ^10
+requirements:
+  _permission: 'config onovas_add_calendar_block'
+
+# Traducciones
+'interface translation project': onovas_add_calendar_block
+'interface translation server pattern': 'modules/custom/onovas_add_calendar_block/config/translations/onovas_add_calendar_block.%language.po'

@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * @file
+ * onovas_add_calendar_block.module.
+ */
+
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+use Drupal\onovas_add_calendar_block\lib\general\MarkdownParser;
+
+/**
+ * Implements hook_help().
+ */
+function onovas_add_calendar_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+
+    case 'help.page.onovas_add_calendar_block':
+      /* Añado el contenido del archivo README.md a la ayuda del módulo */
+      $parser = new MarkdownParser();
+
+      $module_path = \Drupal::service('extension.path.resolver')
+        ->getPath('module', "onovas_add_calendar_block");
+
+      $readme_ruta = $module_path . "/README.md";
+      $contenido = '';
+      if (file_exists($readme_ruta)) {
+        $contenido = file_get_contents($readme_ruta);
+        $contenido = Markup::create($parser->text($contenido));
+
+        if ($contenido) {
+          $template_path = $module_path . "/templates/custom/help.html.twig";
+          $template = file_get_contents($template_path);
+          $build = [
+            'description' => [
+              '#type' => 'inline_template',
+              '#template' => $template,
+              '#context' => [
+                'readme' => $contenido,
+              ],
+            ],
+          ];
+          return $build;
+        }
+      }
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_modules_installed().
+ */
+function onovas_add_calendar_block_modules_installed($modules) {
+  if (in_array('onovas_add_calendar_block', $modules)) {
+    // Be friendly to your users: what to do after install?
+    $url = Url::fromRoute('onovas_add_calendar_block.settings');
+    if (PHP_SAPI != 'cli') {
+      \Drupal::messenger()->addMessage(t('You can now <a href="@url_settings">configure the onovas: Add Calendar Block module</a> for your site.',
+        ['@url_settings' => $url->toString()]), 'status');
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function onovas_add_calendar_block_theme($existing, $type, $theme, $path) {
+  return [
+    'onovas_add_calendar_block' => [
+      'variables' => [
+        'node'         => NULL,
+        'items'        => [],
+        'show_counter' => FALSE,
+        'older'        => FALSE,
+      ],
+    ],
+    'onovas_add_calendar_counter' => [
+      'variables' => [
+        'older' => FALSE,
+      ],
+    ],
+  ];
+}

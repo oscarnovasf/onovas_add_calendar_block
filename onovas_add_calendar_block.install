@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the custom module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function onovas_add_calendar_block_uninstall($is_syncing) {
+  $config = \Drupal::configFactory()
+    ->getEditable('onovas_add_calendar_block.settings');
+
+  if (is_object($config)) {
+    $config->delete();
+  }
+}

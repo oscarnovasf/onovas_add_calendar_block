@@ -1,0 +1,11 @@
+services:
+  # Generador de enlaces para calendarios.
+  onovas_add_calendar_block.generators:
+    class: Drupal\onovas_add_calendar_block\lib\CalendarLinks
+    arguments: ['@file_system', '@file_url_generator']
+  Drupal\onovas_add_calendar_block\lib\CalendarLinks: '@onovas_add_calendar_block.generators'
+
+  onovas_add_calendar_block.twig_extension:
+    class: Drupal\onovas_add_calendar_block\Twig\Extension\AddCalendarExtension
+    tags:
+      - { name: twig.extension }

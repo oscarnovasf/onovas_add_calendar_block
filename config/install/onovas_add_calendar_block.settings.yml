@@ -1,0 +1,10 @@
+enabled_calendars:
+  google: google
+  outlook: outlook
+  yahoo: yahoo
+  icalc: icalc
+text_for_google: 'Google Calendar'
+text_for_outlook: Outlook
+text_for_yahoo: 'Yahoo Calendar'
+text_for_icalc: 'iCalc (ics)'
+show_countdown: 1

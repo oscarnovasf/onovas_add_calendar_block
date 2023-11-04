@@ -1,0 +1,8 @@
+################################################################################
+# CONFIGURACIÓN DEL MÓDULO                                                     #
+################################################################################
+
+# Configuración general
+config onovas_add_calendar_block:
+  title: 'Config onovas: Add Calendar Block'
+  description: 'Allow users to access onovas: Add Calendar Block Config.'

@@ -1,0 +1,14 @@
+{
+    "name": "drupal/onovas_add_calendar_block",
+    "description": "onovas: Add Calendar Block",
+    "type": "drupal-custom-module",
+    "license": "GPL-3.0-or-later",
+    "version": "1.0.0",
+
+    "require": {
+    },
+
+    "require-dev": {
+        "drupal/potx": "^1.0"
+    }
+}
